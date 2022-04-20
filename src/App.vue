@@ -1,12 +1,32 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+      
   </div>
 </template>
+
+<script>
+import CardHeader    from '@/components/CardHeader'
+import CardFooter from '@/components/CardFooter'
+
+export default {
+  name: 'App',
+  props: {  },
+  components:{
+      CardHeader,
+      CardFooter
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
 
 <style>
 #app {
